@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class giaiPTbac2 {
     public static void main(String[] args) {
         double a, b, c, x1, x2, delta;
