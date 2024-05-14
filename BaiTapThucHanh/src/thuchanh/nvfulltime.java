@@ -2,18 +2,18 @@ package thuchanh;
 
 import model.util.configs;
 
-public class nhanvienfulltime extends nhanvien {
+public class nvfulltime extends nhanvien {
     int ngaylamthem, chucvu;
 
-    public nvfulltime(String ten){
+    public nvfulltime(String ten) {
         super(ten);
-    this.chucvu = configs.nv_duc;
+        this.chucvu = configs.nv_duc;
     }
 
-    public nvfulltime(String ten , int ngaylamthem){
+    public nvfulltime(String ten, int ngaylamthem) {
         super(ten);
-    this.ngaylamthem = ngaylamthem;
-    this.chucvu = configs.nv_duc;
+        this.ngaylamthem = ngaylamthem;
+        this.chucvu = configs.nv_duc;
     }
 
     public void loaichucvu(int chucvu) {
