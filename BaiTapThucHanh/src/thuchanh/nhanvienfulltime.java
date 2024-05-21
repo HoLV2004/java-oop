@@ -2,18 +2,18 @@ package thuchanh;
 
 import model.util.configs;
 
-public class nvfulltime extends nhanvien {
+public class nhanvienfulltime extends nhanvien {
     int ngaylamthem, chucvu;
 
-    public nvfulltime(String ten) {
+    public nhanvienfulltimefulltime(String ten){
         super(ten);
-        this.chucvu = configs.nv_duc;
+    this.chucvu = Configs.nv_duc;
     }
 
-    public nvfulltime(String ten, int ngaylamthem) {
+    public nhanvienfulltime(String ten, int ngaylamthem) {
         super(ten);
         this.ngaylamthem = ngaylamthem;
-        this.chucvu = configs.nv_duc;
+        this.chucvu = Configs.nv_duc;
     }
 
     public void loaichucvu(int chucvu) {
@@ -21,7 +21,7 @@ public class nvfulltime extends nhanvien {
     }
 
     public String loainhanvien() {
-        if (chucvu == configs.nv_duc) {
+        if (chucvu == Configs.nv_duc) {
             return " duc fulltime";
         } else {
             return " sep ";
@@ -30,10 +30,10 @@ public class nvfulltime extends nhanvien {
     }
 
     public void tinhluong() {
-        if (chucvu == configs.nv_duc) {
-            luong = configs.luong_nv_fulltime_duc + ngaylamthem * configs.luong_fulltime;
+        if (chucvu == Configs.nv_duc) {
+            luong = Configs.luong_nv_fulltime_duc + ngaylamthem * Configs.luong_fulltime;
         } else if (chucvu == configs.nv_sep) {
-            luong = configs.luong_nv_fulltime_sep + ngaylamthem * configs.luong_fulltime;
+            luong = Configs.luong_nv_fulltime_sep + ngaylamthem * Configs.luong_fulltime;
         }
     }
 }
