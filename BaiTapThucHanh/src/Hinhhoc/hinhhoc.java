@@ -1,4 +1,4 @@
-package hinhhoc;
+package Hinhhoc;
 
 public class hinhhoc {
     public final float PI = 3.14f;
